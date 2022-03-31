@@ -10,20 +10,32 @@
 */
 :root {
   --primary-text-color: #212121;
-  --text-color: rgba(117, 117, 117, 1);
+  --text-color: #757575;
   --accent-color: #2196f3;
   --white-color: #ffffff;
   --bgc-main-color: #e5e5e5;
   --bgc-color: #f5f4fa;
   --bgc-hero-footer: #2f303a;
+  --address-info-footer: rgba(255, 255, 255, 0.6);
 }
 
 body {
   color: var(--primary-text-color);
-  background-color: var(--bgc-main-color);
+  background-color: var(--white-color);
+
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
+
 .logo {
   color: var(--accent-color);
+
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  text-decoration: none;
 }
 .logo .word {
   color: var(--primary-text-color);
@@ -35,6 +47,13 @@ body {
 /* site-nav*/
 .site-nav .link {
   color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -47,6 +66,13 @@ body {
 /* list mail; tel */
 .list .feedback {
   color: var(--text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
 }
 
 .list .feedback:hover,
@@ -57,6 +83,28 @@ body {
 /* Hero */
 .hero .hero-title {
   color: var(--white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Buttons */
+
+.button {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.page {
   background-color: var(--bgc-hero-footer);
 }
 
@@ -65,31 +113,79 @@ body {
 .section .section-title {
   color: var(--primary-text-color);
 }
-
+.description {
+  background-color: var(--bgc-main-color);
+}
 /* features */
 .feature-list .title {
   color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 .feature-list .text {
   color: var(--text-color);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Works */
+.works .work-title {
+  color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 /* Group */
 
 .group .group-title {
   color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.group.description {
+  background-color: var(--bgc-color);
 }
 
 .group-list .name {
   color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
 }
 .group-list .profile {
   color: var(--text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
 
-/* Buttons */
-
-.button {
+/* Footer */
+.footer {
+  background-color: var(--bgc-hero-footer);
+}
+.address-list .information {
   color: var(--white-color);
-  background-color: var(--accent-color);
+}
+.address-list .info {
+  color: var(--address-info-footer);
+}
+.logo .word-new {
+  color: var(--white-color);
+}
+.info,
+.information {
+  text-decoration: none;
 }
