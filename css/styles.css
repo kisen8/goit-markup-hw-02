@@ -8,18 +8,88 @@
 цвет фона темный для футера и героя #2F303A;
 цвет с прзрачностью на майл и тел в футере rgba(255, 255, 255, 0.6);
 */
+:root {
+  --primary-text-color: #212121;
+  --text-color: rgba(117, 117, 117, 1);
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --bgc-main-color: #e5e5e5;
+  --bgc-color: #f5f4fa;
+  --bgc-hero-footer: #2f303a;
+}
 
 body {
-  color: #212121;
-  background-color: #e5e5e5;
+  color: var(--primary-text-color);
+  background-color: var(--bgc-main-color);
 }
 .logo {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .logo .word {
-  color: #212121;
+  color: var(--primary-text-color);
 }
-
 .list {
   list-style: none;
+}
+
+/* site-nav*/
+.site-nav .link {
+  color: var(--primary-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* list mail; tel */
+.list .feedback {
+  color: var(--text-color);
+}
+
+.list .feedback:hover,
+.list .feedback:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero .hero-title {
+  color: var(--white-color);
+  background-color: var(--bgc-hero-footer);
+}
+
+/* Section */
+
+.section .section-title {
+  color: var(--primary-text-color);
+}
+
+/* features */
+.feature-list .title {
+  color: var(--primary-text-color);
+}
+.feature-list .text {
+  color: var(--text-color);
+}
+
+/* Group */
+
+.group .group-title {
+  color: var(--primary-text-color);
+}
+
+.group-list .name {
+  color: var(--primary-text-color);
+}
+.group-list .profile {
+  color: var(--text-color);
+}
+
+/* Buttons */
+
+.button {
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
