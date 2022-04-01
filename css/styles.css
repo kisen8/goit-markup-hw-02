@@ -176,17 +176,19 @@ body {
 }
 
 /* Footer */
-.footer {
+.footer-page {
   background-color: var(--bgc-hero-footer);
 }
-.address {
+.address-page {
   font-style: normal;
 }
-.address-list .information {
-  color: var(--white-color);
-}
+
 .address-list .info {
   color: var(--address-info-footer);
+}
+.address-list .info:hover,
+.address-list .info:focus {
+  color: var(--white-color);
 }
 .logo .word-new {
   color: var(--white-color);
@@ -231,6 +233,6 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
-.main {
+.main-page {
   background-color: var(--bgc-main-color);
 }
