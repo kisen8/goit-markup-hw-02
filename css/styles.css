@@ -14,14 +14,13 @@
   --text-color: #757575;
   --accent-color: #2196f3;
   --white-color: #ffffff;
-  --bgc-main-color: #e5e5e5;
+
   --bgc-color: #f5f4fa;
   --bgc-hero-footer: #2f303a;
   --address-info-footer: rgba(255, 255, 255, 0.6);
 }
 
 /* Styles for index.html */
-
 body {
   color: var(--primary-text-color);
   background-color: var(--white-color);
@@ -40,14 +39,9 @@ body {
 
   text-decoration: none;
 }
-.logo .word {
+.logo-dark {
   color: var(--primary-text-color);
 }
-.list {
-  list-style: none;
-}
-
-/* site-nav*/
 .site-nav .link {
   color: var(--primary-text-color);
 
@@ -55,7 +49,11 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
+}
+.list {
+  list-style: none;
+}
+.link {
   text-decoration: none;
 }
 .site-nav .link:hover,
@@ -65,26 +63,22 @@ body {
 .site-nav .link.current {
   color: var(--accent-color);
 }
-
-/* list mail; tel */
-.list .feedback {
+.feedback .link {
   color: var(--text-color);
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-  text-decoration: none;
 }
-
-.list .feedback:hover,
-.list .feedback:focus {
+.feedback .link:hover,
+.feedback .link:focus {
   color: var(--accent-color);
 }
-
-/* Hero */
-.hero .hero-title {
+.hero {
+  background-color: var(--bgc-hero-footer);
+}
+.hero-title {
   color: var(--white-color);
 
   font-weight: 900;
@@ -94,10 +88,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-
-/* Buttons */
-
-.button {
+.hero-button {
   color: var(--white-color);
   background-color: var(--accent-color);
 
@@ -105,134 +96,80 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
+  cursor: pointer;
 }
-
-.page {
-  background-color: var(--bgc-hero-footer);
-}
-
-/* Section */
-
-.section .section-title {
-  color: var(--primary-text-color);
+.section {
 }
 .description {
-  background-color: var(--bgc-main-color);
 }
-/* features */
-.feature-list .title {
+.section-title {
+  color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.features {
+}
+.features-item {
+}
+.features-title {
   color: var(--primary-text-color);
 
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.feature-list .text {
+.features-text {
   color: var(--text-color);
 
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
-
-/* Works */
-.works .work-title {
-  color: var(--primary-text-color);
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
+.works {
 }
-
-/* Group */
-
-.group .group-title {
-  color: var(--primary-text-color);
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
+.works-item {
 }
-.group.description {
-  background-color: var(--bgc-color);
+.team {
 }
-
-.group-list .name {
+.team-item {
+}
+.team-title {
   color: var(--primary-text-color);
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
-.group-list .profile {
+.team-text {
   color: var(--text-color);
 
-  font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
 }
-
-/* Footer */
-.footer-page {
+.footer {
   background-color: var(--bgc-hero-footer);
 }
-.address-page {
-  font-style: normal;
+.logo-light {
+  color: var(--white-color);
 }
-
-.address-list .info {
+.address {
+}
+.contacts .address.link {
+  color: var(--white-color);
+}
+.contacts-item {
+}
+.contacts .link {
   color: var(--address-info-footer);
 }
-.address-list .info:hover,
-.address-list .info:focus {
-  color: var(--white-color);
-}
-.logo .word-new {
-  color: var(--white-color);
-}
-.info,
-.information {
-  text-decoration: none;
-}
 
-/* Styles for portfolio.html */
-
-.btn .title {
-  color: var(--primary-text-color);
-  background-color: var(--bgc-color);
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-}
-.btn .title:hover,
-.btn .title:focus {
-  color: var(--white-color);
-  background-color: var(--accent-color);
-}
-
-.images .title {
-  color: var(--primary-text-color);
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.images .link {
-  text-decoration: none;
-}
-.images .text {
-  color: var(--text-color);
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-}
-.main-page {
-  background-color: var(--bgc-main-color);
+.contacts {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
 }
