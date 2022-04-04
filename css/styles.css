@@ -42,6 +42,8 @@ body {
 .logo-dark {
   color: var(--primary-text-color);
 }
+
+/* index.html */
 .site-nav .link {
   color: var(--primary-text-color);
 
@@ -99,10 +101,7 @@ body {
 
   cursor: pointer;
 }
-.section {
-}
-.description {
-}
+
 .section-title {
   color: var(--primary-text-color);
 
@@ -111,10 +110,7 @@ body {
   line-height: 1.17;
   text-align: center;
 }
-.features {
-}
-.features-item {
-}
+
 .features-title {
   color: var(--primary-text-color);
 
@@ -130,14 +126,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
-.works {
-}
-.works-item {
-}
-.team {
-}
-.team-item {
-}
+
 .team-title {
   color: var(--primary-text-color);
 
@@ -157,13 +146,11 @@ body {
 .logo-light {
   color: var(--white-color);
 }
-.address {
-}
+
 .contacts .address.link {
   color: var(--white-color);
 }
-.contacts-item {
-}
+
 .contacts .link {
   color: var(--address-info-footer);
 }
@@ -172,4 +159,37 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+}
+
+/* portfolio.html */
+
+.filter-btn {
+  color: var(--primary-text-color);
+  background-color: var(--bgc-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+
+  cursor: pointer;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.cards-title {
+  color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.cards-text {
+  color: var(--text-color);
+
+  font-size: 16px;
+  line-height: 1.88;
 }
