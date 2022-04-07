@@ -32,7 +32,7 @@ body {
 .logo {
   color: var(--accent-color);
 
-  font-family: raleway, sans-serif;
+  font-family: 'raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -94,6 +94,7 @@ body {
   color: var(--white-color);
   background-color: var(--accent-color);
 
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -105,16 +106,31 @@ body {
 .section-title {
   color: var(--primary-text-color);
 
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.page {
+  background-color: var(--bgc-color);
+}
+
 .features-title {
   color: var(--primary-text-color);
 
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -167,9 +183,12 @@ body {
   color: var(--primary-text-color);
   background-color: var(--bgc-color);
 
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
 
   cursor: pointer;
 }
@@ -182,7 +201,6 @@ body {
 .cards-title {
   color: var(--primary-text-color);
 
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
